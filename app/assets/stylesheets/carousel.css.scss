@@ -2,22 +2,12 @@ $gray: #F1F1F1;
 $background-color: $gray;
 
 body {
-  background-color: $background-color;
+  background-color: $gray;
 }
 
-.carousel {
+#carousel {
   img {
-    max-height: 90px;
-    max-width: 90px;
+    height: 90px;
+    width: 90px;
   }
-}
-
-.stage{
-  width:400px;
-  height:400px;
-  margin:2em;
-  float:left;
-  position:relative;
-  background:#ccc;
-  overflow:hidden;
 }

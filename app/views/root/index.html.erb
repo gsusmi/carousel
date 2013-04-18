@@ -1,0 +1,13 @@
+<div id="rotatescroll">
+  <div class="viewport">
+    <ul class="overview">
+      <% @images.each do |image| %>
+        <li><a href='#'><%=image_tag image %></a></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="dot"></div>
+  <div class="overlay"></div>
+  <div class="thumb"></div>
+</div>

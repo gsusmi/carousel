@@ -1,0 +1,11 @@
+%div#carousel
+  %div.viewport
+    %ul.overview
+      - for image in @images
+        %li
+          %a{:href => '#'}
+            = image_tag image
+
+  %div.dot
+  %div.overlay
+  %div.thumb

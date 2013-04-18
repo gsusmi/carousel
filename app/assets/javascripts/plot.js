@@ -1,4 +1,4 @@
-Plot = function ( container ) {
+Plot = function ( element ) {
   this.setDimensions = function( x, y ) {
     this.elm.width(x);
     this.elm.height(y);
@@ -17,7 +17,7 @@ Plot = function ( container ) {
     this.elm.css('background-color', col);
   }
   this.kill = function() {
-    container.removeChild( this.elm );
+    element.removeChild( this.elm );
   }
   this.rotate = function( str ) {
     // this.elm.style.webkitTransform = this.elm.style.MozTransform =
@@ -32,9 +32,13 @@ Plot = function ( container ) {
     this.elm.style.borderRadius = round ? '50%/50%' : '';
   }
 
-  this.elm = $(document.createElement('div'));
-  this.elm.css({ position: "absolute" });
-  container.append( this.elm );
+  // this.elm = $(document.createElement('div'));
+  // this.elm.css({ position: "absolute" });
+  // element.append( this.elm );
+
+  this.elm = element;
+  this.elm.css({position: 'absolute'});
+  window.e = this.elm;
 
   this.getElement = function() {
     return this.elm;
