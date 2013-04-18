@@ -1,0 +1,13 @@
+$gray: #F1F1F1;
+$background-color: $gray;
+
+body {
+  background-color: $background-color;
+}
+
+.carousel {
+  img {
+    max-height: 300px;
+    max-width: 400px;
+  }
+}

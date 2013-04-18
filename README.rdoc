@@ -2,7 +2,10 @@
 
 Create an image carousel
 
+- diplay list of images
+- scale images
+
 todo:
-  - diplay list of images on screen
-  - add reflection to images
   - show images in circle
+  - add reflection to images
+  - add images dynamically
